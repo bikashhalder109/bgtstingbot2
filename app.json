@@ -1,0 +1,52 @@
+{
+    "name": "String Generator",
+    "description": "A Telegram Bot to generate Telethon and Pyrogram String Session.",
+    "logo": "https://te.legra.ph/file/3d071cafe30c95f5dad3a.jpg",
+    "keywords": [
+        "string",
+        "telegram bot",
+        "pyrogram"
+    ],
+    "repository": "https://github.com/Bikashhalder109/bgtstring2",
+    "success_url": "https://t.me/bgt_chat",
+    "env": {
+        "ENVIRONMENT": {
+            "description": "don't change",
+            "required": true,
+            "value": "ANYTHING"
+        },
+        "API_ID": {
+            "description": "Your Api ID",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your Api Hash",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token",
+            "required": true
+        },
+        "DATABASE_URL": {
+            "description": "Your Mongo DB Url",
+            "required": true
+        },
+        "MUST_JOIN": {
+            "description": "Username of a group or channel for which you want to set force sub.(without @)",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    },
+    "stack": "container"
+    }
